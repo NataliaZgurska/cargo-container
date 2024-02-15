@@ -35,7 +35,7 @@ console.log('screen: ', screen.width, 'imgWidth:', imgWidth);
 
 function boxTemplate(fruit, i) {
     return `<div class="box"> <p">${i + 1}</p> 
-    <img src="/cargo-container/assets/apple-688e882e.jpg" alt="a" width="27" height="27">
+  <img src="./img/${fruit}.jpg" alt="${fruit}" width="${imgWidth}" height="${imgHeight}" />
        </div>`
 }
 
@@ -45,10 +45,5 @@ export function makeVisibleBox(quantity) {
    } 
 }
 
-{/* <img class="input-img" src="/cargo-container/assets/apple-688e882e.jpg" alt="small-apple" width="30" height="30"></img>
-<img class="input-img" src="/cargo-container/assets/grape-e08af5f5.jpg" alt="small-grape" width="30" height="30"></img>
-<img class="input-img" src="/cargo-container/assets/banana-b2375553.jpg" alt="small-banana" width="30" height="30"></img> */}
 
 
-
-//  <img src="./img/${fruit}.jpg" alt="${fruit}" width="${imgWidth}" height="${imgHeight}" />
