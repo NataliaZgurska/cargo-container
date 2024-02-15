@@ -34,9 +34,7 @@ if (screen.width >=1158) {
 console.log('screen: ', screen.width, 'imgWidth:', imgWidth);
 
 function boxTemplate(fruit, i) {
-    return `<div class="box"> <p">${i + 1}</p> 
-  <img src="./img/${fruit}.jpg" alt="${fruit}" width="${imgWidth}" height="${imgHeight}" />
-       </div>`
+    return `<div class="box ${fruit}"> <p">${i + 1}</p> </div>`
 }
 
 export function makeVisibleBox(quantity) {
