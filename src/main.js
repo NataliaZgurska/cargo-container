@@ -1,7 +1,7 @@
 import refs from "./js/refs";
 const {form, container, btn, textMessage, textContainer, clearForm, sendingBtn, bigContainer} = refs;
 
-// import { createBoxes, makeVisibleBox } from "./js/createboxes";
+import { createBoxes, makeVisibleBox } from "./js/createboxes";
 import { quantityMessage } from "./js/quantitymessagr";
 import { clearingForm } from "./js/cleaningform";
 
@@ -65,45 +65,4 @@ function onSendingBtnClick() {
     });
 }
  
- function createBoxes(obj) {
-    let boxArray = [];
-    container.innerHTML = '';
-    for (const key in obj) {
-        for (let i = 0; i < obj[key]; i++) {
-            const boxEl = boxTemplate(key, i);
-            boxArray.push(boxEl);
-        }
-    }
-    const markup = boxArray.join('');
-
-    container.insertAdjacentHTML('beforeend', markup);
-    
-}
-
-let imgWidth;
-let imgHeight;
-if (screen.width >=1158) {
-  imgWidth =64;
- imgHeight =64;  
-} else {
-    if (screen.width >=768) {
-        imgWidth =42;
-        imgHeight =42;   
-    } else {
-        imgWidth =27;
-        imgHeight =27; 
-    }      
-}
-console.log('screen: ', screen.width, 'imgWidth:', imgWidth);
-
-function boxTemplate(fruit, i) {
-    return `<div class="box"> <p">${i + 1}</p> 
-    <img src="../images/grape.png" alt="${fruit}" width="${imgWidth}" height="${imgHeight}" />
-    </div>`
-}
-
-function makeVisibleBox(quantity) {
-   for (let i = 0; i < quantity; i++) {
-     setTimeout(()=>container.children[i].style.visibility = 'visible', i*200)
-   } 
-}
+ 
