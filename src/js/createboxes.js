@@ -22,13 +22,13 @@ if (screen.width >=1158) {
   imgWidth =64;
  imgHeight =64;  
 } else {
-if (screen.width >=768) {
-    imgWidth =42;
-    imgHeight =42;   
-} else {
-    imgWidth =27;
-    imgHeight =27; 
-}      
+    if (screen.width >=768) {
+        imgWidth =42;
+        imgHeight =42;   
+    } else {
+        imgWidth =27;
+        imgHeight =27; 
+    }      
 }
 console.log('screen: ', screen.width, 'imgWidth:', imgWidth);
 
