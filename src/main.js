@@ -98,7 +98,7 @@ console.log('screen: ', screen.width, 'imgWidth:', imgWidth);
 
 function boxTemplate(fruit, i) {
     return `<div class="box"> <p">${i + 1}</p> 
-    <img src="./img/${fruit}.jpg" alt="${fruit}" width="${imgWidth}" height="${imgHeight}" />
+    <img src="./src/img/${fruit}.jpg" alt="${fruit}" width="${imgWidth}" height="${imgHeight}" />
     </div>`
 }
 
