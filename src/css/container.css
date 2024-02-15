@@ -36,7 +36,7 @@
   border: 1px solid gray;
   box-shadow: 1px 2px 2px 2px rgba(184, 154, 55, 0.76);
   text-align: center;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .moving {
