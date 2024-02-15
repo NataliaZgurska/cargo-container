@@ -1,5 +1,5 @@
 import refs from "./refs";
-const { form, container, btn, textMessage, textContainer, clearForm, sendingBtn, bigContainer } = refs;
+const { form, container, textMessage, textContainer, bigContainer } = refs;
 
 export function clearingForm() {
     bigContainer.classList.remove('moving');

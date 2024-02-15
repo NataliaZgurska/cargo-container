@@ -1,5 +1,5 @@
 import refs from "./refs";
-const { form, container, btn, textMessage, textContainer, clearForm, sendingBtn, bigContainer } = refs;
+const { container, textMessage, textContainer } = refs;
 
 export function quantityMessage(cargoQuantity) {
    if (cargoQuantity > 50) {

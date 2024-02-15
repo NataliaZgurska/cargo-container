@@ -1,5 +1,5 @@
 import refs from "./js/refs";
-const {form, container, btn, textMessage, textContainer, clearForm, sendingBtn, bigContainer} = refs;
+const {form, container, textMessage, textContainer, clearForm, sendingBtn, bigContainer} = refs;
 
 import { createBoxes, makeVisibleBox } from "./js/createboxes";
 import { quantityMessage } from "./js/quantitymessagr";
