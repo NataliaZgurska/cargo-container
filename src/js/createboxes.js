@@ -7,7 +7,6 @@ export function createBoxes(obj) {
     for (const key in obj) {
         for (let i = 0; i < obj[key]; i++) {
             const boxEl = boxTemplate(key, i);
- console.log(boxEl);           
             boxArray.push(boxEl);
         }
     }
@@ -18,7 +17,7 @@ export function createBoxes(obj) {
 }
 
 function boxTemplate(fruit, i) {
-    return `<div class="box ${fruit}"> <p">${i + 1}</p> </div>`
+    return `<div class="box ${fruit}"> <p>${i + 1}</p> </div>`
 }
 
 export function makeVisibleBox(quantity) {

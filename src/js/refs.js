@@ -7,6 +7,7 @@ export default {
     clearForm: document.querySelector('.js-clearform'),
     sendingBtn: document.querySelector('.sending-btn'),
     bigContainer: document.querySelector('.container-big'),
+    language: document.querySelector('.language-link'),
 }
 
 

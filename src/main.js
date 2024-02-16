@@ -1,8 +1,8 @@
 import refs from "./js/refs";
-const {form, container, textMessage, textContainer, clearForm, sendingBtn, bigContainer} = refs;
+const {form, container, textMessage, textContainer, clearForm, sendingBtn, bigContainer, language} = refs;
 
 import { createBoxes, makeVisibleBox } from "./js/createboxes";
-import { quantityMessage } from "./js/quantitymessagr";
+import { quantityMessage } from "./js/quantitymessage";
 import { clearingForm } from "./js/cleaningform";
 
 
@@ -51,7 +51,13 @@ function onFormSubmit(e) {
 
 function onSendingBtnClick() {
     bigContainer.classList.add('moving');
-    textMessage.innerHTML = `Відправлено контейнер з ${cargoQuantity} ящиками`;
+    if (language.textContent === 'eng') {
+        textMessage.innerHTML = `Відправлено контейнер з ${cargoQuantity} ящиками`;
+    } else {
+        textMessage.innerHTML = `Shipped container with ${cargoQuantity} boxes`;
+    }
+
+    
     console.log('відправляємо контейнер');
     
     const promise1 = new Promise((resolve, reject) => {
@@ -61,8 +67,7 @@ function onSendingBtnClick() {
 })
     promise1.then((value) => {
        window.location.reload();
-     
+     lang = language.textContent;
     });
 }
- 
  
