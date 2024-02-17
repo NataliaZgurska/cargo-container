@@ -67,7 +67,6 @@ function onSendingBtnClick() {
 })
     promise1.then((value) => {
        window.location.reload();
-     lang = language.textContent;
     });
 }
  

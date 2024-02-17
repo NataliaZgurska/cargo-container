@@ -6,7 +6,5 @@ export function clearingForm() {
     form.reset();
     textContainer.classList.remove('text-container-green', 'text-container-full', 'text-container-over')
     textContainer.classList.add('text-container-yellow');
-    textMessage.innerHTML = 'Ви можете завантажити не більше 50 ящиків';
     container.innerHTML = '';
- 
 }
