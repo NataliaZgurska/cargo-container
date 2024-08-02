@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cargo-Container en</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/btn.css" />
+    <link rel="stylesheet" href="./css/container.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title-back-wrap">
+        <h1 class="cargo-title">Container with fruit</h1>
+
+        <div class="language-wrap">
+          <p class="language-container">
+            <a class="language-link" href="./index.html">ukr</a>
+          </p>
+          <div class="language-flag ukr"></div>
+        </div>
+      </div>
+
+      <div class="cargo-message-clearform-wrap">
+        <div class="cargo-messages-backdrop">
+          <p class="cargo-message">The size of the container is 50 meters;</p>
+          <p class="cargo-message">1 box = 1 cubic meter</p>
+        </div>
+
+        <div class="clearform js-clearform">
+          <a class="clearform-link" href="">
+            <svg class="clearform-icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-loop2"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="cargo-form">
+        <div class="form-label-inputs">
+          <label class="form-label">
+            Apples
+            <div class="input-wrap">
+              <input type="number" name="apples" class="form-input" />
+              <img
+                class="input-img"
+                src="./img/apple.jpg"
+                alt="small-apple"
+                width="30"
+                height="30"
+              />
+            </div>
+          </label>
+
+          <label class="form-label">
+            Grape
+            <div class="input-wrap">
+              <input type="number" name="grapes" class="form-input" />
+              <img
+                class="input-img"
+                src="./img/grape.jpg"
+                alt="small-grape"
+                width="30"
+                height="30"
+              />
+            </div>
+          </label>
+
+          <label class="form-label">
+            Bananas
+
+            <div class="input-wrap">
+              <input type="number" name="bananas" class="form-input" />
+              <img
+                class="input-img"
+                src="./img/banana.jpg"
+                alt="small-banana"
+                width="30"
+                height="30"
+              />
+            </div>
+          </label>
+        </div>
+
+        <button type="submit" class="form-btn">Loading</button>
+      </form>
+
+      <div class="text-container">
+        <p class="text">You can load no more than 50 crates</p>
+      </div>
+
+      <div class="container-big">
+        <div class="container-img"></div>
+      </div>
+
+      <button type="button" class="sending-btn">Sending</button>
+    </div>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

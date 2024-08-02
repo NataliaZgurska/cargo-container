@@ -1,0 +1,136 @@
+/************** Збираємо Контейнер ************************/
+.container-big {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 370px;
+  height: 340px;
+  /* background-color: #e7a61a; */
+
+  border-radius: 4px;
+  border: 2px solid rgba(184, 154, 55, 0.76);
+  /* box-shadow: -1px 2px 9px 10px rgba(184, 154, 55, 0.76);  */
+  transition: transform 3500ms linear;
+
+  /* opacity: 0;
+  animation: fadeInText 1000ms linear forwards; */
+
+  background: url(../img/cargonew.jpg) top center / 370px 340px no-repeat;
+}
+
+.container-img {
+  background-color: transparent;
+  width: 303px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-items: flex-start;
+  gap: 1px 1px;
+  margin: 0 auto;
+  padding: 3px 2px 88px 2px;
+}
+
+.box {
+  margin: 0;
+  width: 29px;
+  height: 47px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid gray;
+  box-shadow: 1px 2px 2px 2px rgba(184, 154, 55, 0.76);
+  visibility: hidden;
+}
+
+.apple {
+  background-image: linear-gradient(
+      rgba(67, 47, 100, 0.4),
+      rgba(58, 46, 66, 0.3)
+    ),
+    url(../img/apple.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 29px;
+}
+
+.grape {
+  background-image: linear-gradient(
+      rgba(67, 47, 100, 0.4),
+      rgba(58, 46, 66, 0.3)
+    ),
+    url(../img/grape.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 29px;
+}
+
+.banana {
+  background-image: linear-gradient(
+      rgba(67, 47, 100, 0.4),
+      rgba(58, 46, 66, 0.3)
+    ),
+    url(../img/banana.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 29px;
+}
+
+.moving {
+  transform: translateX(160%);
+}
+
+/****************************************************************************/
+/*********** Media 768 ************/
+@media screen and (min-width: 768px) {
+  /*--- Контейнер 768---*/
+
+  .container-big {
+    width: 720px;
+    height: 438px;
+    margin-bottom: 24px;
+    background-size: 780px 430px;
+  }
+
+  .container-img {
+    width: 643px;
+    padding-bottom: 113px;
+  }
+
+  .box {
+    width: 63px;
+    height: 63px;
+    box-shadow: 1px 2px 12px 4px rgba(184, 154, 55, 0.76);
+  }
+
+  .apple,
+  .grape,
+  .banana {
+    background-size: 63px;
+  }
+}
+
+/****************************************************************************/
+/*********** Media 1158 ************/
+@media screen and (min-width: 1158px) {
+  /*--- Контейнер 1158---*/
+  .container-big {
+    width: 1130px;
+    height: 482px;
+    background-size: 1130px 482px;
+  }
+
+  .container-img {
+    width: 937px;
+    padding-bottom: 157px;
+  }
+
+  .box {
+    width: 92px;
+    height: 89px;
+  }
+  .apple,
+  .grape,
+  .banana {
+    background-size: 89px;
+  }
+}
