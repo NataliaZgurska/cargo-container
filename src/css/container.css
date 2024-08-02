@@ -4,34 +4,48 @@
   flex-wrap: wrap-reverse;
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 370px;
+
+  width: 100%;
+  min-width: 370px;
+  max-width: 780px;
+
   height: 340px;
   border-radius: 4px;
-  background: url(../img/cargonew.jpg) top center / 370px 340px no-repeat;
+  padding: 3px 2px 88px 2px;
 
+  background: url(../img/cargonew.jpg) top center / 100% 340px no-repeat;
   transition: transform 3500ms linear;
 }
 
 .container-img {
   background-color: transparent;
-  width: 303px;
+  min-width: 303px;
+  width: 83%;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
   align-items: flex-start;
   gap: 1px 1px;
   margin: 0 auto;
-  padding: 3px 2px 88px 2px;
 }
 
 .box {
   margin: 0;
-  width: 29px;
+  min-width: 29px;
+
+  width: calc((100% - (9 * 1px)) / 10);
+
   height: 47px;
   background-color: white;
   border-radius: 6px;
   border: 1px solid gray;
   box-shadow: 1px 2px 2px 2px rgba(184, 154, 55, 0.76);
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+
   visibility: hidden;
 }
 
@@ -41,9 +55,6 @@
       rgba(58, 46, 66, 0.3)
     ),
     url(../img/apple.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 29px;
 }
 
 .grape {
@@ -52,9 +63,6 @@
       rgba(58, 46, 66, 0.3)
     ),
     url(../img/grape.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 29px;
 }
 
 .banana {
@@ -63,46 +71,21 @@
       rgba(58, 46, 66, 0.3)
     ),
     url(../img/banana.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 29px;
 }
 
 .moving {
   transform: translateX(160%);
 }
 
-/****************************************************************************/
 /*********** Media 768 ************/
 @media screen and (min-width: 768px) {
   .container-big {
-    width: 720px;
     height: 440px;
-    background-size: 780px 440px;
-    margin-bottom: 30px;
-  }
-
-  .container-img {
-    width: 643px;
+    background-size: 100% 440px;
     padding-bottom: 113px;
   }
 
   .box {
-    width: 63px;
     height: 63px;
-    box-shadow: 1px 2px 12px 4px rgba(184, 154, 55, 0.76);
-  }
-
-  .apple,
-  .grape,
-  .banana {
-    background-size: 63px;
-  }
-}
-
-/*********** Media 1158 ************/
-@media screen and (min-width: 1158px) {
-  .container-big {
-    margin-bottom: 20px;
   }
 }

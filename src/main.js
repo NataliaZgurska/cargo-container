@@ -6,6 +6,7 @@ const {
   textContainer,
   clearForm,
   sendingBtn,
+  loadBtn,
   bigContainer,
   language,
 } = refs;
@@ -13,8 +14,6 @@ const {
 import { createBoxes, makeVisibleBox } from './js/createboxes';
 import { quantityMessage } from './js/quantitymessage';
 import { clearingForm } from './js/cleaningform';
-
-console.log(screen.width);
 
 let fruitsObj;
 let cargoQuantity;
@@ -35,15 +34,19 @@ form.addEventListener('input', e => {
     grape: grapesQuantity,
     banana: bananasQuantity,
   };
-  return fruitsObj;
-});
 
-function onFormSubmit(e) {
-  e.preventDefault();
   cargoQuantity = 0;
   for (const key in fruitsObj) {
     cargoQuantity += fruitsObj[key];
   }
+
+  loadBtnActiv(cargoQuantity);
+
+  return fruitsObj, cargoQuantity;
+});
+
+function onFormSubmit(e) {
+  e.preventDefault();
 
   quantityMessage(cargoQuantity);
 
@@ -52,6 +55,9 @@ function onFormSubmit(e) {
     container.style.height = `${cargoHeight}px`;
     createBoxes(fruitsObj);
     makeVisibleBox(cargoQuantity);
+    sendingBtn.disabled = false;
+  } else {
+    sendingBtn.disabled = true;
   }
 }
 
@@ -64,4 +70,12 @@ function onSendingBtnClick() {
   }
 
   setTimeout(() => window.location.reload(), 3500);
+}
+
+function loadBtnActiv(quantity) {
+  if (quantity > 0 && quantity <= 50) {
+    loadBtn.disabled = false;
+  } else {
+    loadBtn.disabled = true;
+  }
 }

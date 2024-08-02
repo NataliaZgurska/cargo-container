@@ -93,19 +93,20 @@ body {
 .cargo-title {
   font-size: 20px;
   font-weight: 800;
-  opacity: 0;
-  animation: fadeInText 2000ms linear forwards;
   color: #5d26c1;
 }
 
 /*********  text-container  **********/
 .text-container {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.04em;
-  line-height: 1.1;
-  width: 310px;
-  height: 52px;
+  line-height: 1.5;
+  /* width: 310px; */
+  width: 100%;
+  max-width: 990px;
+
+  height: 56px;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -113,6 +114,9 @@ body {
   padding: 4px;
   margin: 0 auto;
   margin-bottom: 24px;
+
+  opacity: 0;
+  animation: fadeInText 2000ms linear forwards;
 }
 
 .text-container-yellow {
@@ -163,10 +167,9 @@ body {
   }
 
   .text-container {
-    font-size: 16px;
+    height: 68px;
+    font-size: 20px;
     font-weight: 500;
-    letter-spacing: 0.02em;
-    width: 647px;
   }
 
   .text {
@@ -198,7 +201,6 @@ body {
   }
 
   .text-container {
-    width: 1020px;
     height: 40px;
     margin-bottom: 12px;
   }
