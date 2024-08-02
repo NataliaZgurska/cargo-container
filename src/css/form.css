@@ -5,7 +5,7 @@
   gap: 20px;
   align-items: center;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .inputs-clearform-wrap {
@@ -108,9 +108,12 @@
     align-items: end;
     gap: 48px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
+  .form-label {
+    font-size: 20px;
+  }
   .form-input {
     width: 130px;
     height: 40px;
@@ -129,7 +132,7 @@
   /*--- Форма 1158---*/
   .cargo-form {
     align-items: center;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
   }
 
   .form-label {

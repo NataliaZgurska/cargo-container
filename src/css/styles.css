@@ -112,7 +112,7 @@ body {
   justify-content: center;
   padding: 4px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .text-container-yellow {
@@ -141,10 +141,6 @@ body {
 @media screen and (min-width: 768px) {
   .main-container {
     padding: 6px 16px 10px 16px;
-  }
-
-  .title-back-wrap {
-    margin-bottom: 4px;
   }
 
   .language-link {
@@ -185,6 +181,10 @@ body {
     padding: 6px 24px 10px 24px;
   }
 
+  .title-back-wrap {
+    margin-bottom: 6px;
+  }
+
   .language-link {
     font-size: 20px;
   }
@@ -200,6 +200,9 @@ body {
   .text-container {
     width: 1020px;
     height: 40px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+  }
+  .text {
+    font-size: 20px;
   }
 }
