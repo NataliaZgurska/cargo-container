@@ -22,7 +22,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #80808036; */
+
   background-color: white;
   color: #212121;
   font-size: 12px;
@@ -98,19 +98,6 @@ body {
   color: #5d26c1;
 }
 
-.cargo-message-clearform-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cargo-message {
-  font-size: 14px;
-  font-weight: 600;
-  color: #525050fa;
-}
-
 /*********  text-container  **********/
 .text-container {
   font-size: 12px;
@@ -143,10 +130,6 @@ body {
 .text-container-over {
   background: linear-gradient(to left, #f00000, #e7a61a, #f00000);
 }
-
-/* .text-container:hover {
-  background-position: right;
-} */
 
 .text {
   font-size: 14px;

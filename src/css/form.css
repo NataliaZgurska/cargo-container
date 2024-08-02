@@ -8,6 +8,14 @@
   margin-bottom: 20px;
 }
 
+.inputs-clearform-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
 .form-label-inputs {
   display: flex;
   flex-direction: row;
@@ -35,7 +43,6 @@
   fill: #2e2f42;
 }
 
-/**-----**/
 .form-input {
   width: 90px;
   height: 34px;
