@@ -1,56 +1,40 @@
 /***************** Кнопка ******************/
-.form-btn {
+.btn {
   display: block;
   width: 180px;
   height: 40px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: #ffffff;
+
   border-radius: 4px;
   box-shadow: -4px 6px 4px #bcbba3;
   border: none;
   cursor: pointer;
+
   background-size: 200%;
+  background-color: gray;
+  color: white;
   transition: transform 300ms linear;
 }
 
-.form-btn:disabled,
 .sending-btn {
-  background-color: grey;
+  margin: 0 auto;
+}
+
+.btn:disabled {
   cursor: not-allowed;
 }
 
 .form-btn:not(:disabled) {
   background: linear-gradient(to left, #59c173, #a17fe0, #5d26c1);
-  box-shadow: 0px 2px #bcbba3;
-  transform: translate(0, 4px);
-}
-
-/******--  sending-btn ----********/
-.sending-btn {
-  display: block;
-  width: 180px;
-  height: 40px;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  border-radius: 4px;
-  box-shadow: -4px 6px 4px #bcbba3;
-  border: none;
-  cursor: pointer;
-  background-size: 200%;
-  transition: 500ms;
-  margin: 0 auto;
-}
-
-.sending-btn:hover {
-  background-position: right;
 }
 
 .sending-btn:not(:disabled) {
   background: linear-gradient(to left, #5d26c1, #0f9b0f, #5d26c1);
+}
+
+.btn:not(:disabled):active {
   box-shadow: 0px 2px #bcbba3;
   transform: translate(0, 4px);
 }
@@ -58,8 +42,7 @@
 /****************************************************************************/
 /*********** Media 1158 ************/
 @media screen and (min-width: 1158px) {
-  .form-btn,
-  .sending-btn {
+  .btn {
     width: 220px;
     height: 38px;
     font-size: 20px;

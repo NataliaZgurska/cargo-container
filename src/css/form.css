@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  padding-left: 2px;
+  padding-right: 2px;
   margin-top: 10px;
   margin-bottom: 24px;
 }
@@ -115,16 +117,6 @@
 /****************************************************************************/
 /*********** Media 768 ************/
 @media screen and (min-width: 768px) {
-  /*--- Форма 768---*/
-  /* .cargo-form {
-    flex-direction: row;
-    justify-content: center;
-    align-items: end;
-    gap: 48px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-  } */
-
   .cargo-form {
     gap: 48px;
   }
@@ -147,7 +139,6 @@
 /****************************************************************************/
 /*********** Media 1158 ************/
 @media screen and (min-width: 1158px) {
-  /*--- Форма 1158---*/
   .cargo-form {
     align-items: center;
     margin-bottom: 20px;

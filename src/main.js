@@ -51,7 +51,7 @@ function onFormSubmit(e) {
   quantityMessage(cargoQuantity);
 
   if (cargoQuantity <= 50) {
-    let cargoHeight = Math.ceil(cargoQuantity / 10) * 50;
+    let cargoHeight = Math.ceil(cargoQuantity / 10) * 40;
     container.style.height = `${cargoHeight}px`;
     createBoxes(fruitsObj);
     makeVisibleBox(cargoQuantity);

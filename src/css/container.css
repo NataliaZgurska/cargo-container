@@ -1,4 +1,5 @@
 /************** Збираємо Контейнер ************************/
+
 .container-big {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -6,21 +7,24 @@
   margin-bottom: 30px;
 
   width: 100%;
-  min-width: 370px;
+  min-width: 350px;
   max-width: 780px;
 
   height: 340px;
   border-radius: 4px;
-  padding: 3px 2px 88px 2px;
 
-  background: url(../img/cargonew.jpg) top center / 100% 340px no-repeat;
+  padding-bottom: 100px;
+  padding-top: 30px;
+
+  background: url(../img/cargo-min.png) top center / 100% 320px no-repeat;
+
   transition: transform 3500ms linear;
 }
 
 .container-img {
   background-color: transparent;
   min-width: 303px;
-  width: 83%;
+  width: 90%;
 
   display: flex;
   flex-direction: row;
@@ -36,7 +40,7 @@
 
   width: calc((100% - (9 * 1px)) / 10);
 
-  height: 47px;
+  height: 40px;
   background-color: white;
   border-radius: 6px;
   border: 1px solid gray;
@@ -83,9 +87,10 @@
     height: 440px;
     background-size: 100% 440px;
     padding-bottom: 113px;
+    padding-top: 40px;
   }
 
   .box {
-    height: 63px;
+    height: 56px;
   }
 }
