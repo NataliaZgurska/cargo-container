@@ -13,7 +13,6 @@
   height: 340px;
   border-radius: 4px;
 
-  padding-bottom: 100px;
   padding-top: 30px;
 
   background: url(../img/cargo-min.png) top center / 100% 320px no-repeat;
@@ -86,8 +85,8 @@
   .container-big {
     height: 440px;
     background-size: 100% 440px;
-    padding-bottom: 113px;
     padding-top: 40px;
+    margin-bottom: 18px;
   }
 
   .box {
