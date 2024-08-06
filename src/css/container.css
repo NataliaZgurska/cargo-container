@@ -7,13 +7,14 @@
   margin-bottom: 30px;
 
   width: 100%;
-  min-width: 350px;
+  min-width: 300px;
   max-width: 780px;
 
   height: 340px;
   border-radius: 4px;
 
   padding-top: 30px;
+  padding-bottom: 100px;
 
   background: url(../img/cargo-min.png) top center / 100% 320px no-repeat;
 
@@ -22,7 +23,7 @@
 
 .container-img {
   background-color: transparent;
-  min-width: 303px;
+  min-width: 290px;
   width: 90%;
 
   display: flex;
@@ -35,7 +36,7 @@
 
 .box {
   margin: 0;
-  min-width: 29px;
+  min-width: 20px;
 
   width: calc((100% - (9 * 1px)) / 10);
 
@@ -86,6 +87,7 @@
     height: 440px;
     background-size: 100% 440px;
     padding-top: 40px;
+    padding-bottom: 112px;
     margin-bottom: 18px;
   }
 

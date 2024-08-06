@@ -93,7 +93,7 @@ body {
 }
 
 .cargo-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   color: #5d26c1;
 }
@@ -140,6 +140,13 @@ body {
 .text {
   font-size: 14px;
   text-align: center;
+}
+
+/*********** Media 400 ************/
+@media screen and (min-width: 400px) {
+  .cargo-title {
+    font-size: 20px;
+  }
 }
 
 /****************************************************************************/
