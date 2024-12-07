@@ -47,7 +47,6 @@ form.addEventListener('input', e => {
 
 function onFormSubmit(e) {
   e.preventDefault();
-
   quantityMessage(cargoQuantity);
 
   if (cargoQuantity <= 50) {
@@ -73,7 +72,7 @@ function onSendingBtnClick() {
 }
 
 function loadBtnActiv(quantity) {
-  if (quantity > 0 && quantity <= 50) {
+  if (quantity > 0) {
     loadBtn.disabled = false;
   } else {
     loadBtn.disabled = true;

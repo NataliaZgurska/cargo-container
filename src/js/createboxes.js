@@ -9,7 +9,6 @@ export function createBoxes(obj) {
       boxTemplate(key, i)
     ).join('');
   }
-
   container.innerHTML = '';
   container.insertAdjacentHTML('beforeend', markup);
 }

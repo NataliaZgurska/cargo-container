@@ -17,6 +17,24 @@ export function quantityMessage(cargoQuantity) {
       'text-container-yellow'
     );
     textContainer.classList.add('text-container-green');
+  } else if (cargoQuantity === 50) {
+    console.log('50');
+    textMessage.innerHTML = textComplete;
+    textContainer.classList.remove(
+      'text-container-over',
+      'text-container-green',
+      'text-container-yellow'
+    );
+    textContainer.classList.add('text-container-full');
+  } else {
+    console.log('>50');
+    textMessage.innerHTML = textTooMuch;
+    textContainer.classList.remove(
+      'text-container-full',
+      'text-container-green',
+      'text-container-yellow'
+    );
+    textContainer.classList.add('text-container-over');
   }
 }
 
@@ -26,12 +44,12 @@ function languageChange(cargoQuantity) {
     textCanMore = `завантажуємо ${cargoQuantity} ящиків. Ще є місце для ${
       50 - cargoQuantity
     } ящиків`;
-    textComplete = `завантажили ${cargoQuantity} ящиків. Контейнер заповнений повністю`;
+    textComplete = `завантажуємо ${cargoQuantity} ящиків. Контейнер заповнений повністю`;
   } else {
     textTooMuch = `${cargoQuantity} - that's too many boxes! Reduce the quantity or book an additional container`;
     textCanMore = `load ${cargoQuantity} boxes. There is still room for ${
       50 - cargoQuantity
     } boxes`;
-    textComplete = `loaded ${cargoQuantity} boxes. The container is completely filled`;
+    textComplete = `load ${cargoQuantity} boxes. The container is completely filled`;
   }
 }
