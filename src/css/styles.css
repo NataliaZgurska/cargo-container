@@ -49,6 +49,13 @@ body {
   margin-bottom: 10px;
 }
 
+.language-audio-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+}
+
 .language-link {
   font-size: 14px;
   font-weight: 500;
@@ -199,6 +206,9 @@ body {
     margin-bottom: 6px;
   }
 
+  .language-audio-wrap {
+    gap: 40px;
+  }
   .language-link {
     font-size: 20px;
   }

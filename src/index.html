@@ -9,17 +9,31 @@
     <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/btn.css" />
     <link rel="stylesheet" href="./css/container.css" />
+
+    <script src="./main.js" type="module" defer></script>
+    <script src="./js/audio.js" defer></script>
   </head>
   <body>
     <div class="main-container">
       <div class="title-back-wrap">
         <h1 class="cargo-title">Контейнер з фруктами</h1>
 
-        <div class="language-wrap">
-          <p class="language-container">
-            <a class="language-link" href="./page1.html">eng</a>
-          </p>
-          <div class="language-flag eng"></div>
+        <div class="language-audio-wrap">
+          <div class="language-wrap">
+            <p class="language-container">
+              <a class="language-link" href="./page1.html">eng</a>
+            </p>
+            <div class="language-flag eng"></div>
+          </div>
+
+          <input id="playBtn" type="button" class="audiobtn" value="Play" />
+          <audio id="audioElement">
+            <source
+              src="../media/1698388525_klavdia-petrivna-mperatori.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
         </div>
       </div>
 
@@ -99,6 +113,5 @@
         Відправляємо
       </button>
     </div>
-    <script src="./main.js" type="module"></script>
   </body>
 </html>

@@ -39,6 +39,31 @@
   transform: translate(0, 4px);
 }
 
+/******* аудіо-кнопка ******/
+.audiobtn {
+  height: 35px;
+  width: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: linear-gradient(to left, #004ff9c7, #fff94cab, #004ff9c7);
+  border-radius: 10px;
+  box-shadow: -4px 6px 4px #bcbba3;
+  border: none;
+  cursor: pointer;
+  background-size: 200%;
+  transition: 500ms;
+}
+.audiobtn:hover {
+  background-position: right;
+}
+
+.audiobtn:active {
+  box-shadow: 0px 2px #bcbba3;
+  transform: translate(0, 2px);
+}
+
 /****************************************************************************/
 /*********** Media 1158 ************/
 @media screen and (min-width: 1158px) {
@@ -46,5 +71,8 @@
     width: 220px;
     height: 38px;
     font-size: 20px;
+  }
+  .audiobtn {
+    width: 120px;
   }
 }
